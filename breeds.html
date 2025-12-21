@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Breeds - The Pet Archive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-paw"></i>
+                    <span>The Pet Archive</span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="breeds.html" class="active">Breeds</a>
+                    <a href="about.html">About Us</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Pet Breeds Gallery</h1>
+            <p>Click on a breed to see detailed information</p>
+        </div>
+    </section>
+
+    <section class="breeds-page">
+        <div class="container">
+            <div class="breed-filters">
+                <button class="filter-btn active" onclick="filterBreeds('all')">All Breeds</button>
+                <button class="filter-btn" onclick="filterBreeds('dog')"><i class="fas fa-dog"></i> Dogs</button>
+                <button class="filter-btn" onclick="filterBreeds('cat')"><i class="fas fa-cat"></i> Cats</button>
+                <button class="filter-btn" onclick="filterBreeds('parrot')"><i class="fas fa-dove"></i> Parrots</button>
+            </div>
+
+            <div class="breed-gallery-container">
+                <!-- DOG BREEDS (8) -->
+                <div class="gallery-item dog" onclick="showBreed('golden')">
+                    <div class="gallery-image">
+                     <img src="./assests/download.jpg" alt="images/dog1" style="height: fit-content;" >
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Golden Retriever</h3>
+                        <p>Friendly family companion</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item dog" onclick="showBreed('german')">
+                    <div class="gallery-image">
+             <img src="./assests/German.jpg" alt="images/dog1" style="height: fit-content;" >
+                    </div>
+                    <div class="gallery-info">
+                        <h3>German Shepherd</h3>
+                        <p>Loyal working dog</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item dog" onclick="showBreed('beagle')">
+                    <div class="gallery-image">
+                        <img src="./assests/beagle.jpg" alt="images/dog3" style="height: fit-content;" >
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Beagle</h3>
+                        <p>Curious scent hound</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item dog" onclick="showBreed('labrador')">
+                    <div class="gallery-image">
+                        <img src="./assests/labrador.jpg" alt="images/dog3" style="height: fit-content;" >
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Labrador Retriever</h3>
+                        <p>Popular family dog</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item dog" onclick="showBreed('poodle')">
+                    <div class="gallery-image">
+                        <img src="./assests/poodle.jpg" alt="images/dog5" style="height: fit-content;" >
+                        </div>
+                    <div class="gallery-info">
+                        <h3>Poodle</h3>
+                        <p>Intelligent & elegant</p>
+                        
+                    </div>
+                </div>
+
+                <div class="gallery-item dog" onclick="showBreed('bulldog')">
+                    <div class="gallery-image">
+                    <img src="./assests/bulldog.jpg" alt="images/dog5" style="height: fit-content;" >
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Bulldog</h3>
+                        <p>Gentle & determined</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item dog" onclick="showBreed('dachshund')">
+                    <div class="gallery-image">
+                        <img src="./assests/dachshund.jpg" alt="images/dog7" style="height: fit-content;" >
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Dachshund</h3>
+                        <p>Curious & brave</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item dog" onclick="showBreed('husky')">
+                    <div class="gallery-image">
+                        <img src="./assests/siberian.jpg" alt="images/dog8" style="height: fit-content;" >
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Siberian Husky</h3>
+                        <p>Energetic & vocal</p>
+                    </div>
+                </div>
+
+               
+                <div class="gallery-item cat" onclick="showBreed('siamese')">
+                    <div class="gallery-image">
+                        <img src="./assests/Siamesecat.jpg" alt="images/cat1" style="height: fit-content;" >
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Siamese</h3>
+                        <p>Vocal & social</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item cat" onclick="showBreed('persian')">
+                    <div class="gallery-image">
+                            <img src="./assests/persian.jpg" alt="images/cat2" style="height: fit-content;" >
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Persian</h3>
+                        <p>Gentle & quiet</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item cat" onclick="showBreed('mainecoon')">
+                    <div class="gallery-image">
+                        <img src="./assests/maine.jpg" alt="images/cat3" style="height: fit-content;" >
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Maine Coon</h3>
+                        <p>Gentle giant</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item cat" onclick="showBreed('bengal')">
+                    <div class="gallery-image">
+                      <img src="./assests/bengal.jpg" alt="Bengal Cat">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Bengal</h3>
+                        <p>Wild-looking & active</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item cat" onclick="showBreed('sphynx')">
+                    <div class="gallery-image">
+                       <img src="./assests/sphynx).jpg" alt="Sphynx Cat">
+                       </div>
+                    <div class="gallery-info">
+                        <h3>Sphynx</h3>
+                        <p>Hairless & affectionate</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item cat" onclick="showBreed('ragdoll')">
+                    <div class="gallery-image">
+                        <img src="./assests/ragdall.jpg" alt="Ragdoll Cat">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Ragdoll</h3>
+                        <p>Relaxed & gentle</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item cat" onclick="showBreed('british')">
+                    <div class="gallery-image">
+                        <img src="./assests/british.jpg" alt="British Shorthair">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>British Shorthair</h3>
+                        <p>Calm & dignified</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item cat" onclick="showBreed('scottish')">
+                    <div class="gallery-image">
+                        <img src="./assests/scottish.jpg" alt="Scottish Fold">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Scottish Fold</h3>
+                        <p>Sweet & curious</p>
+                    </div>
+                </div>
+
+                <!-- PARROT BREEDS (6) -->
+                <div class="gallery-item parrot" onclick="showBreed('african')">
+                    <div class="gallery-image">
+                        <img src="./assests/african.jpg" alt="images/parrot" style="height: fit-content;" >
+                    </div>
+                    <div class="gallery-info">
+                        <h3>African Grey</h3>
+                        <p>Highly intelligent</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item parrot" onclick="showBreed('macaw')">
+                    <div class="gallery-image">
+                        <img src="./assests/macaw).jpg" alt="Macaw" style="height: fit-content;" >
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Macaw</h3>
+                        <p>Colorful & social</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item parrot" onclick="showBreed('cockatiel')">
+                    <div class="gallery-image">
+                        <img src="./assests/cockatiel.jpg" alt="images/parrot3" style="height: fit-content;" >
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Cockatiel</h3>
+                        <p>Friendly & gentle</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item parrot" onclick="showBreed('cockatoo')">
+                    <div class="gallery-image">
+                        <img src="./assests/cockatoo.jpg" alt="Cockatoo" style="height: fit-content;" >
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Cockatoo</h3>
+                        <p>Affectionate & noisy</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item parrot" onclick="showBreed('amazon')">
+                    <div class="gallery-image">
+                        <img src="./assests/amazon.jpg" alt="Amazon Parrot" style="height: fit-content;" >
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Amazon Parrot</h3>
+                        <p>Excellent talker</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item parrot" onclick="showBreed('budgie')">
+                    <div class="gallery-image">
+                        <img src="./assests/budgerigar.jpg" alt="Budgerigar" style="height: fit-content;" >
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Budgerigar (Budgie)</h3>
+                        <p>Small & chatty</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPUP MODAL WINDOW -->
+    <div class="popup-modal" id="popupModal">
+        <div class="popup-content">
+            <!-- Content will be inserted here by JavaScript -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Pet Archive</h3>
+                    <p>Your trusted guide to pet breeds and information.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="breeds.html">Breeds</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> info@petarchive.com</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Pet Archive. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FILTER FUNCTION
+        function filterBreeds(type) {
+            const items = document.getElementsByClassName('gallery-item');
+            const buttons = document.getElementsByClassName('filter-btn');
+            
+            // Update buttons
+            for (let btn of buttons) btn.classList.remove('active');
+            if (type === 'all') buttons[0].classList.add('active');
+            if (type === 'dog') buttons[1].classList.add('active');
+            if (type === 'cat') buttons[2].classList.add('active');
+            if (type === 'parrot') buttons[3].classList.add('active');
+            
+            // Show/hide items
+            for (let item of items) {
+                if (type === 'all' || item.classList.contains(type)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            }
+        }
+        
+        // SIMPLE BREED DATA
+        const breedData = {
+            'golden': {
+                type: 'dog',
+                name: 'Golden Retriever',
+                category: 'Dog Breed',
+                size: 'Large',
+                weight: '55-75 lbs',
+                lifespan: '10-12 years',
+                energy: 'High',
+                description: 'Friendly, intelligent, and devoted family companions known for their gentle nature.',
+                allergies: ['Hip dysplasia', 'Skin allergies', 'Ear infections'],
+                habits: ['2 hours daily exercise', 'Loves swimming', 'Weekly brushing'],
+                funFact: 'They have a soft mouth for carrying things gently without damaging them.'
+            },
+            'german': {
+                type: 'dog',
+                name: 'German Shepherd',
+                category: 'Dog Breed',
+                size: 'Large',
+                weight: '50-90 lbs',
+                lifespan: '9-13 years',
+                energy: 'Very High',
+                description: 'Loyal, protective working dogs with high intelligence.',
+                allergies: ['Hip dysplasia', 'Digestive issues', 'Bloat risk'],
+                habits: ['2+ hours exercise', 'Mental stimulation needed', 'Regular training'],
+                funFact: 'They have 225 million scent receptors - 45 times more than humans!'
+            },
+            'siamese': {
+                type: 'cat',
+                name: 'Siamese',
+                category: 'Cat Breed',
+                size: 'Medium',
+                weight: '6-14 lbs',
+                lifespan: '15-20 years',
+                energy: 'High',
+                description: 'Vocal, social felines known for their striking blue eyes.',
+                allergies: ['Dental issues', 'Respiratory problems', 'Crossed eyes'],
+                habits: ['Very vocal', 'Social interaction needed', 'Daily play sessions'],
+                funFact: 'Siamese cats are born completely white and develop their points as they age.'
+            },
+            'african': {
+                type: 'parrot',
+                name: 'African Grey',
+                category: 'Parrot Breed',
+                size: 'Medium',
+                weight: '400-650g',
+                lifespan: '40-60 years',
+                energy: 'High',
+                description: 'Highly intelligent birds known for exceptional talking ability.',
+                allergies: ['Feather plucking', 'Respiratory issues', 'Calcium deficiency'],
+                habits: ['Mental stimulation needed', 'Social interaction required', 'Puzzle toys'],
+                funFact: 'African Greys have the intelligence of a 5-year-old child.'
+            }
+        };
+        
+        // SIMPLE POPUP FUNCTION
+        function showBreed(id) {
+            const breed = breedData[id] || breedData['golden'];
+            const modal = document.getElementById('popupModal');
+            
+            // Set styling
+            let bg = 'dog-bg', icon = 'fa-dog';
+            if (breed.type === 'cat') { bg = 'cat-bg'; icon = 'fa-cat'; }
+            if (breed.type === 'parrot') { bg = 'parrot-bg'; icon = 'fa-dove'; }
+            
+            // Create popup content
+            document.querySelector('.popup-content').innerHTML = `
+                <button class="close-popup" onclick="closePopup()">&times;</button>
+                <div class="popup-header ${bg}">
+                    <i class="fas ${icon}"></i>
+                    <div class="popup-title">
+                        <h2>${breed.name}</h2>
+                        <p class="popup-subtitle">${breed.category} • Lifespan: ${breed.lifespan}</p>
+                    </div>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-section">
+                        <h3><i class="fas fa-info-circle"></i> Basic Information</h3>
+                        <p><strong>Size:</strong> ${breed.size}</p>
+                        <p><strong>Weight:</strong> ${breed.weight}</p>
+                        <p><strong>Energy:</strong> ${breed.energy}</p>
+                        <p>${breed.description}</p>
+                    </div>
+                    <div class="popup-section">
+                        <h3><i class="fas fa-heartbeat"></i> Health Issues</h3>
+                        <ul class="popup-list">${breed.allergies.map(a => `<li>${a}</li>`).join('')}</ul>
+                    </div>
+                    <div class="popup-section">
+                        <h3><i class="fas fa-running"></i> Daily Care</h3>
+                        <ul class="popup-list">${breed.habits.map(h => `<li>${h}</li>`).join('')}</ul>
+                    </div>
+                    <div class="popup-section">
+                        <h3><i class="fas fa-star"></i> Fun Fact</h3>
+                        <p>${breed.funFact}</p>
+                    </div>
+                </div>
+            `;
+            
+            modal.style.display = 'flex';
+        }
+        
+        // CLOSE POPUP
+        function closePopup() {
+            document.getElementById('popupModal').style.display = 'none';
+        }
+        
+        // CLICK OUTSIDE TO CLOSE
+        window.onclick = function(e) {
+            if (e.target.id === 'popupModal') closePopup();
+        }
+        
+        // ESCAPE KEY TO CLOSE
+        document.onkeydown = function(e) {
+            if (e.key === 'Escape') closePopup();
+        }
+        
+        // MOBILE MENU
+        document.querySelector('.mobile-menu').onclick = function() {
+            document.querySelector('.nav-links').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

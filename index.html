@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pet Archive - Your Guide to Pet Breeds</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body style="overflow-x: hidden;"> 
+    <header>
+        <div class="header-main-navigation-wrapper-div"> <div class="container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <i class="fas fa-paw"></i>
+                        <span>The Pet Archive</span>
+                    </div>
+                    <div class="nav-links">
+                        <a href="index.html" class="active">Home</a>
+                        <a href="breeds.html">Breeds</a>
+                        <a href="about.html">About Us</a>
+                        <a href='feedback.html'>Feedback</a> 
+                    </div>
+                    <div class="mobile-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-section-inner-container-wrapper"> <div class="container">
+                <div class="hero-content">
+                    <h1>Discover Your Perfect Pet Companion</h1>
+                    <p>Learn about different pet breeds, their habits, and how to keep them happy</p>
+                    <div class="hero-buttons">
+                        <a href="breeds.html" class="btn btn-primary">
+                            <i class="fas fa-search"></i> Explore Breeds
+                        </a>
+                        <a href="#gallery" class="btn btn-secondary">
+                            <i class="fas fa-images"></i> View Gallery
+                        </a>
+                        <a href="#habits" class="btn btn-secondary">
+                            <i class="fas fa-heart"></i> Learn Habits
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-info">
+        <div class="container">
+            <div class="info-cards-container-wrapper">
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="card-icon-holder">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <h3>150+ Breeds</h3>
+                        <p>Comprehensive information about various pet breeds</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon-holder">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Care Guide</h3>
+                        <p>Important care information for your pets</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon-holder">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Care Tips</h3>
+                        <p>Daily habits and care routines for happy pets</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="gallery-header-box">
+                <h2 class="section-title">Our Pet Gallery</h2>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item dog">
+                    <div class="gallery-link">
+                        <div class="gallery-image">
+                            <img src="./assests/download.jpg" alt="images/dog1" style="height: fit-content;" >
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Golden Retriever</h3>
+                            <p>Friendly and intelligent family companion</p>
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-content" style="overflow-y: hidden;"> <div class="modal-image dog">
+                                <i class="fas fa-dog"></i>
+                            </div>
+                            <h2 class="modal-title">Golden Retriever</h2>
+                            <p class="modal-subtitle">Friendly, Intelligent, Devoted</p>
+                            <div class="modal-details">
+                                <h3>Quick Facts</h3>
+                                <ul>
+                                    <li><strong>Size:</strong> Large (55-75 lbs)</li>
+                                    <li><strong>Life Span:</strong> 10-12 years</li>
+                                    <li><strong>Temperament:</strong> Friendly</li>
+                                    <li>Easy to train and loyal</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item dog">
+                    <div class="gallery-link">
+                        <div class="gallery-image">
+                            <img src="./assests/German.jpg" alt="images/dog1" style="height: fit-content;" >
+                        </div>
+                        <div class="gallery-info">
+                            <h3>German Shepherd</h3>
+                            <p>Loyal and protective working dog</p>
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-content" style="overflow-y: hidden;">
+                            <div class="modal-image dog">
+                                <i class="fas fa-dog"></i>
+                            </div>
+                            <h2 class="modal-title">German Shepherd</h2>
+                            <p class="modal-subtitle">Confident, Courageous, Smart</p>
+                            <div class="modal-details">
+                                <h3>Quick Facts</h3>
+                                <ul>
+                                    <li><strong>Size:</strong> Large (50-90 lbs)</li>
+                                    <li><strong>Life Span:</strong> 9-13 years</li>
+                                    <li><strong>Temperament:</strong> Loyal</li>
+                                    <li>Excellent working dogs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item dog">
+                    <div class="gallery-link">
+                        <div class="gallery-image">
+                        <img src="./assests/beagle.jpg" alt="images/dog3" style="height: fit-content;" >
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Beagle</h3>
+                            <p>Curious and merry scent hound</p>
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-content" style="overflow-y: hidden;">
+                            <div class="modal-image dog">
+                                <i class="fas fa-dog"></i>
+                            </div>
+                            <h2 class="modal-title">Beagle</h2>
+                            <p class="modal-subtitle">Friendly, Curious, Merry</p>
+                            <div class="modal-details">
+                                <h3>Quick Facts</h3>
+                                <ul>
+                                    <li><strong>Size:</strong> Medium (20-30 lbs)</li>
+                                    <li><strong>Life Span:</strong> 12-15 years</li>
+                                    <li><strong>Temperament:</strong> Curious</li>
+                                    <li>Great sense of smell</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item cat">
+                    <div class="gallery-link">
+                        <div class="gallery-image">
+                            <img src="./assests/Siamesecat.jpg" alt="images/cat1" style="height: fit-content;" >
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Siamese</h3>
+                            <p>Vocal and social feline friend</p>
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-content" style="overflow-y: hidden;">
+                            <div class="modal-image cat">
+                                <i class="fas fa-cat"></i>
+                            </div>
+                            <h2 class="modal-title">Siamese</h2>
+                            <p class="modal-subtitle">Social, Vocal, Active</p>
+                            <div class="modal-details">
+                                <h3>Quick Facts</h3>
+                                <ul>
+                                    <li><strong>Size:</strong> Medium (6-14 lbs)</li>
+                                    <li><strong>Life Span:</strong> 15-20 years</li>
+                                    <li><strong>Temperament:</strong> Vocal</li>
+                                    <li>Striking blue eyes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item cat">
+                    <div class="gallery-link">
+                        <div class="gallery-image">
+                    <img src="./assests/persian.jpg" alt="images/cat2" style="height: fit-content;" >
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Persian</h3>
+                            <p>Quiet and sweet long-haired beauty</p>
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-content" style="overflow-y: hidden;">
+                            <div class="modal-image cat">
+                                <i class="fas fa-cat"></i>
+                            </div>
+                            <h2 class="modal-title">Persian</h2>
+                            <p class="modal-subtitle">Quiet, Sweet, Gentle</p>
+                            <div class="modal-details">
+                                <h3>Quick Facts</h3>
+                                <ul>
+                                    <li><strong>Size:</strong> Medium (7-12 lbs)</li>
+                                    <li><strong>Life Span:</strong> 12-17 years</li>
+                                    <li><strong>Temperament:</strong> Gentle</li>
+                                    <li>Beautiful long coats</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item cat">
+                    <div class="gallery-link">
+                        <div class="gallery-image">
+                           <img src="./assests/maine.jpg" alt="images/cat3" style="height: fit-content;" >
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Maine Coon</h3>
+                            <p>Gentle giant of the cat world</p>
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-content" style="overflow-y: hidden;">
+                            <div class="modal-image cat">
+                                <i class="fas fa-cat"></i>
+                            </div>
+                            <h2 class="modal-title">Maine Coon</h2>
+                            <p class="modal-subtitle">Gentle, Friendly, Intelligent</p>
+                            <div class="modal-details">
+                                <h3>Quick Facts</h3>
+                                <ul>
+                                    <li><strong>Size:</strong> Large (10-25 lbs)</li>
+                                    <li><strong>Life Span:</strong> 12-15 years</li>
+                                    <li><strong>Temperament:</strong> Friendly</li>
+                                    <li>Dog-like personalities</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item parrot">
+                    <div class="gallery-link">
+                        <div class="gallery-image">
+                            <img src="./assests/african.jpg" alt="images/parrot" style="height: fit-content;" >
+                        </div>
+                        <div class="gallery-info">
+                            <h3>African Grey</h3>
+                            <p>Highly intelligent talking bird</p>
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-content" style="overflow-y: hidden;">
+                            <div class="modal-image parrot">
+                                <i class="fas fa-dove"></i>
+                            </div>
+                            <h2 class="modal-title">African Grey</h2>
+                            <p class="modal-subtitle">Intelligent, Sensitive, Social</p>
+                            <div class="modal-details">
+                                <h3>Quick Facts</h3>
+                                <ul>
+                                    <li><strong>Size:</strong> Medium (400-650g)</li>
+                                    <li><strong>Life Span:</strong> 40-60 years</li>
+                                    <li><strong>Temperament:</strong> Intelligent</li>
+                                    <li>Great talking ability</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item parrot">
+                    <div class="gallery-link">
+                        <div class="gallery-image">
+                           <img src="./assests/macaw).jpg" alt="images/parrot2" style="height: fit-content;" >
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Macaw</h3>
+                            <p>Colorful and social large parrot</p>
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-content" style="overflow-y: hidden;">
+                            <div class="modal-image parrot">
+                                <i class="fas fa-dove"></i>
+                            </div>
+                            <h2 class="modal-title">Macaw</h2>
+                            <p class="modal-subtitle">Social, Playful, Intelligent</p>
+                            <div class="modal-details">
+                                <h3>Quick Facts</h3>
+                                <ul>
+                                    <li><strong>Size:</strong> Large (900-1500g)</li>
+                                    <li><strong>Life Span:</strong> 50-60 years</li>
+                                    <li><strong>Temperament:</strong> Playful</li>
+                                    <li>Strong beaks and colors</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item parrot">
+                    <div class="gallery-link">
+                        <div class="gallery-image">
+                         <img src="./assests/cockatiel.jpg" alt="images/parrot3" style="height: fit-content;" >
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Cockatiel</h3>
+                            <p>Friendly and gentle small parrot</p>
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-content" style="overflow-y: hidden;">
+                            <div class="modal-image parrot">
+                                <i class="fas fa-dove"></i>
+                            </div>
+                            <h2 class="modal-title">Cockatiel</h2>
+                            <p class="modal-subtitle">Friendly, Gentle, Playful</p>
+                            <div class="modal-details">
+                                <h3>Quick Facts</h3>
+                                <ul>
+                                    <li><strong>Size:</strong> Small (80-120g)</li>
+                                    <li><strong>Life Span:</strong> 15-20 years</li>
+                                    <li><strong>Temperament:</strong> Gentle</li>
+                                    <li>Good for beginners</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-bottom-cta-div">
+                <div class="gallery-cta">
+                    <h3>Want to see more adorable pets?</h3>
+                    <p>Visit our breeds section to learn about all our furry and feathered friends</p>
+                    <a href="breeds.html" class="btn btn-primary">
+                        <i class="fas fa-paw"></i> Explore All Breeds
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="habits-section" id="habits">
+        <div class="container">
+            <h2 class="section-title">Pet Habits & Daily Routines</h2>
+            <div class="habits-container">
+                <div class="habit-category">
+                    <div class="habit-header">
+                        <i class="fas fa-dog"></i>
+                        <h3>Dog Habits</h3>
+                    </div>
+                    <div class="habit-content">
+                        <div class="habit-info">
+                            <h4>Daily Routines</h4>
+                            <ul>
+                                <li>Morning walk and bathroom break</li>
+                                <li>Breakfast followed by short play session</li>
+                                <li>Mid-day nap and quiet time</li>
+                                <li>Evening exercise and training</li>
+                                <li>Dinner and family bonding time</li>
+                            </ul>
+                        </div>
+                        <div class="habit-info">
+                            <h4>Social Behaviors</h4>
+                            <ul>
+                                <li>Pack animals that thrive on social interaction</li>
+                                <li>Need regular socialization with other dogs</li>
+                                <li>Establish hierarchy through body language</li>
+                                <li>Communicate through barking and body postures</li>
+                            </ul>
+                        </div>
+                        <div class="habit-info">
+                            <h4>Exercise Needs</h4>
+                            <ul>
+                                <li>30 minutes to 2 hours of daily exercise</li>
+                                <li>Regular walks and play sessions</li>
+                                <li>Mental stimulation through training</li>
+                                <li>Breed-specific activity requirements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="habit-category">
+                    <div class="habit-header">
+                        <i class="fas fa-cat"></i>
+                        <h3>Cat Habits</h3>
+                    </div>
+                    <div class="habit-content">
+                        <div class="habit-info">
+                            <h4>Daily Routines</h4>
+                            <ul>
+                                <li>Sleep 12-16 hours per day in short naps</li>
+                                <li>Most active at dawn and dusk</li>
+                                <li>Multiple grooming sessions throughout day</li>
+                                <li>Regular feeding in small portions</li>
+                                <li>Play and hunting behavior practice</li>
+                            </ul>
+                        </div>
+                        <div class="habit-info">
+                            <h4>Social Behaviors</h4>
+                            <ul>
+                                <li>More independent but still social creatures</li>
+                                <li>Communicate through vocalizations</li>
+                                <li>Establish territories and routines</li>
+                                <li>Affection through purring</li>
+                            </ul>
+                        </div>
+                        <div class="habit-info">
+                            <h4>Play & Enrichment</h4>
+                            <ul>
+                                <li>Daily play sessions with toys</li>
+                                <li>Natural hunters - enjoy stalking</li>
+                                <li>Scratching to mark territory</li>
+                                <li>Vertical spaces for climbing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="habit-category">
+                    <div class="habit-header">
+                        <i class="fas fa-dove"></i>
+                        <h3>Parrot Habits</h3>
+                    </div>
+                    <div class="habit-content">
+                        <div class="habit-info">
+                            <h4>Daily Routines</h4>
+                            <ul>
+                                <li>Wake up with sunrise, active daylight</li>
+                                <li>Foraging and feeding throughout day</li>
+                                <li>Social interactions and vocalizations</li>
+                                <li>Regular preening sessions</li>
+                                <li>Evening quiet time before roosting</li>
+                            </ul>
+                        </div>
+                        <div class="habit-info">
+                            <h4>Social Behaviors</h4>
+                            <ul>
+                                <li>Flock animals that need interaction</li>
+                                <li>Vocal communication including mimicry</li>
+                                <li>Preening and grooming each other</li>
+                                <li>Establish social hierarchies</li>
+                            </ul>
+                        </div>
+                        <div class="habit-info">
+                            <h4>Mental Stimulation</h4>
+                            <ul>
+                                <li>Highly intelligent - need puzzles</li>
+                                <li>Regular training sessions</li>
+                                <li>Foraging opportunities</li>
+                                <li>Environmental variety</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-inner-wrapper">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>The Pet Archive</h3>
+                        <p>Your trusted guide to pet breeds, habits, and health information.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="breeds.html">Breeds</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact Info</h3>
+                        <p><i class="fas fa-envelope"></i> info@ThePetArchive.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 The Pet Archive. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    // Simple hamburger menu toggle
+    var menuButton = document.querySelector('.mobile-menu');
+    var navLinks = document.querySelector('.nav-links');
+    
+    menuButton.addEventListener('click', function() {
+        // Toggle the 'show' class
+        if (navLinks.classList.contains('show')) {
+            navLinks.classList.remove('show');
+        } else {
+            navLinks.classList.add('show');
+        }
+    });
+    
+    // Close menu when clicking a link
+    var links = document.querySelectorAll('.nav-links a');
+    for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function() {
+            navLinks.classList.remove('show');
+        });
+    }
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!navLinks.contains(event.target) && !menuButton.contains(event.target)) {
+            navLinks.classList.remove('show');
+        }
+    });
+</script>
+</html>

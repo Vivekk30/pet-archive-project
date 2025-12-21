@@ -1,0 +1,1092 @@
+/* Updated Color Palette:
+   Background: #FDFBF7 | Navbar/Footer: #3A4D39 
+   Buttons: #C2A580 (Warm Beige) | Hover: #A88C6A (Darker Beige) | Text: #1E2022 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FDFBF7; /* Soft Parchment */
+    color: #1E2022;            /* Night Slate */
+    line-height: 1.6;
+}
+
+/* Container for all pages */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background-color: #3A4D39; /* Deep Moss Green */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FDFBF7; /* Parchment contrast */
+}
+
+.logo i {
+    font-size: 1.8rem;
+    color: #C2A580; /* Warm Beige accent */
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #FDFBF7;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FDFBF7;
+    background-color: #A88C6A; /* Darker Beige hover */
+}
+
+.nav-links a.active {
+    color: #FDFBF7;
+    background-color: #C2A580; /* Active Beige state */
+}
+
+.mobile-menu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #FDFBF7;
+}
+
+/* =========================================== */
+/* HERO SECTION (Home Page) */
+/* =========================================== */
+.hero {
+    background-color: #3A4D39; /* Deep Moss Green */
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    color: #FDFBF7;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-bottom: 50px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* =========================================== */
+/* BUTTONS */
+/* =========================================== */
+.btn {
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #C2A580; /* Warm Beige */
+    color: #FDFBF7;
+}
+
+.btn-primary:hover {
+    background-color: #A88C6A; /* Darker Beige Hover */
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #FDFBF7;
+    border: 2px solid #FDFBF7;
+}
+
+.btn-secondary:hover {
+    background-color: #FDFBF7;
+    color: #3A4D39;
+}
+
+/* =========================================== */
+/* INFO CARDS (Home Page) */
+/* =========================================== */
+.quick-info {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.info-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-card i {
+    font-size: 2.5rem;
+    color: #C2A580; /* Warm Beige accent */
+    margin-bottom: 20px;
+}
+
+.info-card h3 {
+    margin-bottom: 15px;
+    color: #3A4D39; /* Moss headers */
+    font-size: 1.5rem;
+}
+
+/* =========================================== */
+/* GALLERY SECTION (Home Page) */
+/* =========================================== */
+.gallery-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1E2022;
+    font-size: 2.2rem;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #C2A580; /* Warm Beige accent */
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.gallery-subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    color: #5d5d5d;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.gallery-item {
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-info h3 {
+    color: #1E2022;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.gallery-info p {
+    color: #777777;
+}
+
+/* Hover Modal Effect */
+.gallery-item .modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    z-index: 10;
+}
+
+.gallery-item:hover .modal {
+    display: block;
+}
+
+.modal-content {
+    height: 100%;
+}
+
+.modal-title {
+    color: #1E2022;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.modal-subtitle {
+    color: #C2A580; /* Warm Beige */
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.modal-details h3 {
+    color: #1E2022;
+    margin-bottom: 10px;
+}
+
+.modal-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #5d5d5d;
+}
+
+.modal-details li {
+    margin-bottom: 8px;
+}
+
+.gallery-cta {
+    text-align: center;
+    padding: 30px;
+    background-color: #FDFBF7; /* soft background */
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.gallery-cta h3 {
+    color: #1E2022;
+    margin-bottom: 10px;
+}
+
+/* =========================================== */
+/* HABITS SECTION (Home Page) */
+/* =========================================== */
+.habits-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #FDFBF7;
+}
+
+.habits-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.habit-category {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.habit-header {
+    background-color: #3A4D39; /* Deep Moss */
+    color: #FDFBF7;
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.habit-header i {
+    font-size: 2rem;
+}
+
+.habit-content {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.habit-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.habit-info h4 {
+    color: #3A4D39; /* Moss headers */
+    margin-bottom: 15px;
+}
+
+.habit-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #5d5d5d;
+}
+
+.habit-info li {
+    margin-bottom: 8px;
+}
+
+/* =========================================== */
+/* BREEDS PAGE STYLES */
+/* =========================================== */
+.page-header {
+    background-color: #C2A580; /* Warm Beige header */
+    padding: 60px 0;
+    text-align: center;
+    color: #FDFBF7;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+}
+
+/* Breed filter buttons */
+.breed-filters {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid #C2A580; /* Warm Beige border */
+    border-radius: 50px;
+    color: #5d5d5d;
+    cursor: pointer;
+    margin: 0 10px 10px 0;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #A88C6A; /* Darker Beige Hover */
+    color: white;
+    border-color: #A88C6A;
+}
+
+.filter-btn.active {
+    background-color: #C2A580; /* Warm Beige */
+    color: white;
+}
+
+.filter-btn i {
+    margin-right: 5px;
+}
+
+/* Breed cards grid */
+.breed-gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 60px;
+    justify-content: center;
+}
+
+/* =========================================== */
+/* POPUP MODAL WINDOW FOR BREEDS PAGE */
+/* =========================================== */
+.popup-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background-color: white;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.close-popup {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    color: #555555;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 1001;
+}
+
+.close-popup:hover {
+    color: #C2A580; /* Warm Beige */
+}
+
+.popup-header {
+    padding: 30px 30px 20px;
+    border-radius: 15px 15px 0 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.popup-header.dog-bg {
+    background: linear-gradient(135deg, #3A4D39 0%, #C2A580 100%); /* Moss to Beige */
+}
+
+.popup-header.cat-bg {
+    background: linear-gradient(135deg, #C2A580 0%, #A88C6A 100%); /* Beige to Darker Beige */
+}
+
+.popup-header.parrot-bg {
+    background: linear-gradient(135deg, #A88C6A 0%, #3A4D39 100%); /* Dark Beige to Moss */
+}
+
+.popup-header i {
+    font-size: 3rem;
+}
+
+.popup-title {
+    flex: 1;
+}
+
+.popup-title h2 {
+    margin-bottom: 5px;
+    font-size: 2.2rem;
+}
+
+.popup-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.popup-body {
+    padding: 30px;
+}
+
+.popup-section {
+    margin-bottom: 25px;
+}
+
+.popup-section h3 {
+    color: #1E2022;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.popup-section h3 i {
+    color: #C2A580; /* Warm Beige */
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    background-color: #f9f7f7;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.info-item:hover {
+    background-color: #f8f3ed; /* Very light beige tint on hover */
+}
+
+.info-label {
+    font-weight: bold;
+    color: #777777;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info-value {
+    color: #5d5d5d;
+}
+
+.popup-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #5d5d5d;
+}
+
+.popup-list li {
+    margin-bottom: 8px;
+}
+
+/* =========================================== */
+/* ABOUT PAGE STYLES */
+/* =========================================== */
+.about-content {
+    padding: 60px 0;
+}
+
+.about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 2;
+    min-width: 300px;
+}
+
+.about-text h2 {
+    color: #3A4D39; /* Moss header */
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.about-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.about-text li {
+    margin-bottom: 10px;
+}
+
+.about-stats {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat-card {
+    flex: 1;
+    min-width: 150px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.stat-card i {
+    font-size: 2.5rem;
+    color: #C2A580; /* Warm Beige */
+    margin-bottom: 15px;
+}
+
+.stat-card h3 {
+    color: #1E2022;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+/* Team Section */
+.team-section {
+    padding: 60px 0;
+    background-color: #f9f7f7;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.team-member {
+    width: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.member-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #3A4D39; /* Moss member icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.member-image i {
+    font-size: 3rem;
+    color: white;
+}
+
+.team-member h3 {
+    color: #1E2022;
+    margin-bottom: 5px;
+}
+
+.member-role {
+    color: #C2A580; /* Warm Beige role */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* =========================================== */
+/* FEEDBACK PAGE STYLES */
+/* =========================================== */
+.feedback-section {
+    padding: 60px 0;
+}
+
+.feedback-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.feedback-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.feedback-info h2 {
+    color: #3A4D39; /* Moss header */
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.feedback-info p {
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-method i {
+    font-size: 1.5rem;
+    color: #C2A580; /* Warm Beige icon */
+    width: 40px;
+}
+
+.contact-method h3 {
+    color: #1E2022;
+    margin-bottom: 5px;
+}
+
+.contact-method p {
+    margin-bottom: 0;
+    color: #777777;
+}
+
+.feedback-form {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.feedback-form h2 {
+    color: #3A4D39; /* Moss header */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1E2022;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.checkbox-label input {
+    width: auto;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 60px 0;
+    background-color: #f9f7f7;
+}
+
+.faq-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.faq-item {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.faq-item h3 {
+    color: #3A4D39; /* Moss header */
+    margin-bottom: 15px;
+}
+
+/* =========================================== */
+/* FOOTER */
+/* =========================================== */
+footer {
+    background-color: #3A4D39; /* Deep Moss */
+    color: #FDFBF7;
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    color: #C2A580; /* Warm Beige accent */
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #FDFBF7;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #C2A580; /* Warm Beige hover */
+}
+
+.footer-section p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* =========================================== */
+/* RESPONSIVE DESIGN */
+/* =========================================== */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 250px;
+        justify-content: center;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .gallery-item {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .filter-btn {
+        margin: 0 5px 10px 0;
+        padding: 8px 15px;
+    }
+    
+    .feedback-content {
+        flex-direction: column;
+    }
+    
+    .contact-methods {
+        gap: 15px;
+    }
+    
+    .faq-item {
+        min-width: 100%;
+    }
+    
+    .team-member {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .popup-content {
+        width: 95%;
+        margin: 10px;
+    }
+    
+    .popup-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .popup-header i {
+        font-size: 2.5rem;
+    }
+    
+    .popup-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .breed-filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .filter-btn {
+        margin: 5px;
+        flex: 1;
+        min-width: 120px;
+    }
+    
+    .about-stats {
+        flex-direction: column;
+    }
+    
+    .stat-card {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile nav for Parchment/Moss palette */
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #3A4D39; /* Moss mobile bg */
+        flex-direction: column;
+        padding: 20px 0;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        z-index: 100;
+    }
+    
+    .nav-links.show {
+        display: flex;
+    }
+    
+    .nav-links a {
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+        color: #FDFBF7;
+    }
+    
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+    
+    .mobile-menu {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #FDFBF7;
+    }
+}
+
+.gallery-item, .info-card, .breed-card, .team-member, .stat-card, .faq-item {
+    transition: all 0.3s ease;
+}
+
+.btn, .filter-btn {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
