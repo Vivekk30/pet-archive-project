@@ -320,7 +320,7 @@
             if (type === 'cat') buttons[2].classList.add('active');
             if (type === 'parrot') buttons[3].classList.add('active');
             
-            // Show/hide items
+
             for (let item of items) {
                 if (type === 'all' || item.classList.contains(type)) {
                     item.style.display = 'block';
@@ -396,7 +396,7 @@
             if (breed.type === 'cat') { bg = 'cat-bg'; icon = 'fa-cat'; }
             if (breed.type === 'parrot') { bg = 'parrot-bg'; icon = 'fa-dove'; }
             
-            // Create popup content
+          
             document.querySelector('.popup-content').innerHTML = `
                 <button class="close-popup" onclick="closePopup()">&times;</button>
                 <div class="popup-header ${bg}">
@@ -432,22 +432,22 @@
             modal.style.display = 'flex';
         }
         
-        // CLOSE POPUP
+       
         function closePopup() {
             document.getElementById('popupModal').style.display = 'none';
         }
         
-        // CLICK OUTSIDE TO CLOSE
+     
         window.onclick = function(e) {
             if (e.target.id === 'popupModal') closePopup();
         }
         
-        // ESCAPE KEY TO CLOSE
+    
         document.onkeydown = function(e) {
             if (e.key === 'Escape') closePopup();
         }
         
-        // MOBILE MENU
+
         document.querySelector('.mobile-menu').onclick = function() {
             document.querySelector('.nav-links').classList.toggle('show');
         }

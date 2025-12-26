@@ -40,7 +40,7 @@
             <div class="about-grid">
                 <div class="about-text">
                     <h2>Our Story</h2>
-                    <p>The Pet Archive was founded in 2020 with a simple mission: to provide comprehensive, accurate, and accessible information about pet care to owners worldwide. We believe that every pet deserves a happy, healthy life, and every owner deserves the knowledge to provide it.</p>
+                    <p>The Pet Archive was founded in 2025 with a simple mission: to provide comprehensive, accurate, and accessible information about pet care to owners worldwide. We believe that every pet deserves a happy, healthy life, and every owner deserves the knowledge to provide it.</p>
                     
                     <p>What started as a small blog about dog breeds has grown into a comprehensive resource covering dogs, cats, parrots, and their specific needs regarding breeds, habits, and health concerns.</p>
                     
@@ -139,18 +139,18 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 The Pet Archive. All rights reserved.</p>
+                <p>&copy; 2025 The Pet Archive. All rights reserved.</p>
             </div>
         </div>
     </footer>
 </body>
 <script>
-    // Simple hamburger menu toggle
+ 
     var menuButton = document.querySelector('.mobile-menu');
     var navLinks = document.querySelector('.nav-links');
     
     menuButton.addEventListener('click', function() {
-        // Toggle the 'show' class
+     
         if (navLinks.classList.contains('show')) {
             navLinks.classList.remove('show');
         } else {
@@ -158,7 +158,7 @@
         }
     });
     
-    // Close menu when clicking a link
+ 
     var links = document.querySelectorAll('.nav-links a');
     for (var i = 0; i < links.length; i++) {
         links[i].addEventListener('click', function() {
@@ -166,7 +166,7 @@
         });
     }
     
-    // Close menu when clicking outside
+
     document.addEventListener('click', function(event) {
         if (!navLinks.contains(event.target) && !menuButton.contains(event.target)) {
             navLinks.classList.remove('show');
