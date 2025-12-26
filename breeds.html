@@ -308,12 +308,12 @@
     </footer>
 
     <script>
-        // FILTER FUNCTION
+    
         function filterBreeds(type) {
             const items = document.getElementsByClassName('gallery-item');
             const buttons = document.getElementsByClassName('filter-btn');
             
-            // Update buttons
+        
             for (let btn of buttons) btn.classList.remove('active');
             if (type === 'all') buttons[0].classList.add('active');
             if (type === 'dog') buttons[1].classList.add('active');
@@ -330,7 +330,7 @@
             }
         }
         
-        // SIMPLE BREED DATA
+        
         const breedData = {
             'golden': {
                 type: 'dog',
@@ -386,7 +386,7 @@
             }
         };
         
-        // SIMPLE POPUP FUNCTION
+        
         function showBreed(id) {
             const breed = breedData[id] || breedData['golden'];
             const modal = document.getElementById('popupModal');

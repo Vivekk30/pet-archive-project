@@ -1,7 +1,3 @@
-/* Updated Color Palette:
-   Background: #FDFBF7 | Navbar/Footer: #3A4D39 
-   Buttons: #C2A580 (Warm Beige) | Hover: #A88C6A (Darker Beige) | Text: #1E2022 
-*/
 
 * {
     margin: 0;
@@ -11,12 +7,12 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #FDFBF7; /* Soft Parchment */
-    color: #1E2022;            /* Night Slate */
+    background-color: #FDFBF7; 
+    color: #1E2022;            
     line-height: 1.6;
 }
 
-/* Container for all pages */
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -25,7 +21,7 @@ body {
 }
 
 header {
-    background-color: #3A4D39; /* Deep Moss Green */
+    background-color: #C2A580; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -46,12 +42,12 @@ header {
     gap: 10px;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #FDFBF7; /* Parchment contrast */
+    color: #FDFBF7; 
 }
 
 .logo i {
     font-size: 1.8rem;
-    color: #C2A580; /* Warm Beige accent */
+    color: #C2A580; 
 }
 
 .nav-links {
@@ -70,12 +66,12 @@ header {
 
 .nav-links a:hover {
     color: #FDFBF7;
-    background-color: #A88C6A; /* Darker Beige hover */
+    background-color: #A88C6A;
 }
 
 .nav-links a.active {
     color: #FDFBF7;
-    background-color: #C2A580; /* Active Beige state */
+    background-color: #C2A580;
 }
 
 .mobile-menu {
@@ -85,11 +81,10 @@ header {
     color: #FDFBF7;
 }
 
-/* =========================================== */
-/* HERO SECTION (Home Page) */
-/* =========================================== */
+
+
 .hero {
-    background-color: #3A4D39; /* Deep Moss Green */
+    background-color: #3A4D39; 
     padding-top: 80px;
     padding-bottom: 80px;
     text-align: center;
@@ -123,9 +118,6 @@ header {
     flex-wrap: wrap;
 }
 
-/* =========================================== */
-/* BUTTONS */
-/* =========================================== */
 .btn {
     padding: 12px 30px;
     border-radius: 50px;
@@ -146,12 +138,12 @@ header {
 }
 
 .btn-primary {
-    background-color: #C2A580; /* Warm Beige */
+    background-color: #C2A580;
     color: #FDFBF7;
 }
 
 .btn-primary:hover {
-    background-color: #A88C6A; /* Darker Beige Hover */
+    background-color: #A88C6A; 
 }
 
 .btn-secondary {
@@ -165,9 +157,6 @@ header {
     color: #3A4D39;
 }
 
-/* =========================================== */
-/* INFO CARDS (Home Page) */
-/* =========================================== */
 .quick-info {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -197,19 +186,16 @@ header {
 
 .info-card i {
     font-size: 2.5rem;
-    color: #C2A580; /* Warm Beige accent */
+    color: #C2A580; 
     margin-bottom: 20px;
 }
 
 .info-card h3 {
     margin-bottom: 15px;
-    color: #3A4D39; /* Moss headers */
+    color: #3A4D39; 
     font-size: 1.5rem;
 }
 
-/* =========================================== */
-/* GALLERY SECTION (Home Page) */
-/* =========================================== */
 .gallery-section {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -229,7 +215,7 @@ header {
     display: block;
     width: 80px;
     height: 4px;
-    background-color: #C2A580; /* Warm Beige accent */
+    background-color: #C2A580; 
     margin: 10px auto;
     border-radius: 2px;
 }
@@ -294,7 +280,7 @@ header {
     color: #777777;
 }
 
-/* Hover Modal Effect */
+
 .gallery-item .modal {
     display: none;
     position: absolute;
@@ -322,7 +308,7 @@ header {
 }
 
 .modal-subtitle {
-    color: #C2A580; /* Warm Beige */
+    color: #C2A580; 
     margin-bottom: 15px;
     font-weight: 500;
 }
@@ -345,7 +331,7 @@ header {
 .gallery-cta {
     text-align: center;
     padding: 30px;
-    background-color: #FDFBF7; /* soft background */
+    background-color: #FDFBF7; 
     border-radius: 15px;
     margin-top: 30px;
 }
@@ -355,9 +341,7 @@ header {
     margin-bottom: 10px;
 }
 
-/* =========================================== */
-/* HABITS SECTION (Home Page) */
-/* =========================================== */
+
 .habits-section {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -378,7 +362,7 @@ header {
 }
 
 .habit-header {
-    background-color: #3A4D39; /* Deep Moss */
+    background-color: #3A4D39; 
     color: #FDFBF7;
     padding: 25px 30px;
     display: flex;
@@ -403,7 +387,7 @@ header {
 }
 
 .habit-info h4 {
-    color: #3A4D39; /* Moss headers */
+    color: #3A4D39; 
     margin-bottom: 15px;
 }
 
@@ -417,11 +401,9 @@ header {
     margin-bottom: 8px;
 }
 
-/* =========================================== */
-/* BREEDS PAGE STYLES */
-/* =========================================== */
+
 .page-header {
-    background-color: #C2A580; /* Warm Beige header */
+    background-color: #C2A580; 
     padding: 60px 0;
     text-align: center;
     color: #FDFBF7;
@@ -437,7 +419,6 @@ header {
     font-size: 1.1rem;
 }
 
-/* Breed filter buttons */
 .breed-filters {
     text-align: center;
     margin-bottom: 40px;
@@ -446,7 +427,7 @@ header {
 .filter-btn {
     padding: 10px 20px;
     background-color: white;
-    border: 2px solid #C2A580; /* Warm Beige border */
+    border: 2px solid #C2A580; 
     border-radius: 50px;
     color: #5d5d5d;
     cursor: pointer;
@@ -457,13 +438,13 @@ header {
 }
 
 .filter-btn:hover {
-    background-color: #A88C6A; /* Darker Beige Hover */
+    background-color: #A88C6A;
     color: white;
     border-color: #A88C6A;
 }
 
 .filter-btn.active {
-    background-color: #C2A580; /* Warm Beige */
+    background-color: #C2A580; 
     color: white;
 }
 
@@ -471,7 +452,6 @@ header {
     margin-right: 5px;
 }
 
-/* Breed cards grid */
 .breed-gallery-container {
     display: flex;
     flex-wrap: wrap;
@@ -480,9 +460,6 @@ header {
     justify-content: center;
 }
 
-/* =========================================== */
-/* POPUP MODAL WINDOW FOR BREEDS PAGE */
-/* =========================================== */
 .popup-modal {
     display: none;
     position: fixed;
@@ -520,7 +497,7 @@ header {
 }
 
 .close-popup:hover {
-    color: #C2A580; /* Warm Beige */
+    color: #C2A580;
 }
 
 .popup-header {
@@ -533,15 +510,15 @@ header {
 }
 
 .popup-header.dog-bg {
-    background: linear-gradient(135deg, #3A4D39 0%, #C2A580 100%); /* Moss to Beige */
+    background-color: #3A4D39;
 }
 
 .popup-header.cat-bg {
-    background: linear-gradient(135deg, #C2A580 0%, #A88C6A 100%); /* Beige to Darker Beige */
+    background-color: #C2A580; 
 }
 
 .popup-header.parrot-bg {
-    background: linear-gradient(135deg, #A88C6A 0%, #3A4D39 100%); /* Dark Beige to Moss */
+    background-color: #A88C6A;
 }
 
 .popup-header i {
@@ -579,7 +556,7 @@ header {
 }
 
 .popup-section h3 i {
-    color: #C2A580; /* Warm Beige */
+    color: #C2A580; 
 }
 
 .info-grid {
@@ -597,7 +574,7 @@ header {
 }
 
 .info-item:hover {
-    background-color: #f8f3ed; /* Very light beige tint on hover */
+    background-color: #f8f3ed; 
 }
 
 .info-label {
@@ -621,9 +598,6 @@ header {
     margin-bottom: 8px;
 }
 
-/* =========================================== */
-/* ABOUT PAGE STYLES */
-/* =========================================== */
 .about-content {
     padding: 60px 0;
 }
@@ -640,7 +614,7 @@ header {
 }
 
 .about-text h2 {
-    color: #3A4D39; /* Moss header */
+    color: #3A4D39;
     margin-bottom: 20px;
     margin-top: 30px;
 }
@@ -680,7 +654,7 @@ header {
 
 .stat-card i {
     font-size: 2.5rem;
-    color: #C2A580; /* Warm Beige */
+    color: #C2A580; 
     margin-bottom: 15px;
 }
 
@@ -690,7 +664,7 @@ header {
     font-size: 2rem;
 }
 
-/* Team Section */
+
 .team-section {
     padding: 60px 0;
     background-color: #f9f7f7;
@@ -716,7 +690,7 @@ header {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #3A4D39; /* Moss member icon */
+    background-color: #3A4D39; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -734,14 +708,11 @@ header {
 }
 
 .member-role {
-    color: #C2A580; /* Warm Beige role */
+    color: #C2A580; 
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-/* =========================================== */
-/* FEEDBACK PAGE STYLES */
-/* =========================================== */
 .feedback-section {
     padding: 60px 0;
 }
@@ -758,7 +729,7 @@ header {
 }
 
 .feedback-info h2 {
-    color: #3A4D39; /* Moss header */
+    color: #3A4D39;
     margin-bottom: 20px;
     font-size: 1.8rem;
 }
@@ -782,7 +753,7 @@ header {
 
 .contact-method i {
     font-size: 1.5rem;
-    color: #C2A580; /* Warm Beige icon */
+    color: #C2A580;
     width: 40px;
 }
 
@@ -806,7 +777,7 @@ header {
 }
 
 .feedback-form h2 {
-    color: #3A4D39; /* Moss header */
+    color: #3A4D39;
     margin-bottom: 20px;
 }
 
@@ -847,7 +818,6 @@ header {
     width: auto;
 }
 
-/* FAQ Section */
 .faq-section {
     padding: 60px 0;
     background-color: #f9f7f7;
@@ -869,15 +839,12 @@ header {
 }
 
 .faq-item h3 {
-    color: #3A4D39; /* Moss header */
+    color: #3A4D39; 
     margin-bottom: 15px;
 }
 
-/* =========================================== */
-/* FOOTER */
-/* =========================================== */
 footer {
-    background-color: #3A4D39; /* Deep Moss */
+    background-color: #3A4D39;
     color: #FDFBF7;
     padding: 50px 0 20px;
 }
@@ -894,13 +861,34 @@ footer {
     min-width: 250px;
 }
 
+.footer-section:first-child {
+    order: 2;
+    text-align: center;
+}
+
+
+.footer-section:nth-child(2) {
+    order: 1;
+    text-align: left; 
+}
+
+
+.footer-section:last-child {
+    order: 3;
+    text-align: right;
+}
+
+
+
 .footer-section h3 {
-    color: #C2A580; /* Warm Beige accent */
+    color: #C2A580; 
     margin-bottom: 20px;
+   
 }
 
 .footer-section ul {
     list-style-type: none;
+    padding: 0; 
 }
 
 .footer-section ul li {
@@ -913,8 +901,9 @@ footer {
 }
 
 .footer-section a:hover {
-    color: #C2A580; /* Warm Beige hover */
+    color: #C2A580; 
 }
+
 
 .footer-section p {
     display: flex;
@@ -923,15 +912,20 @@ footer {
     margin-bottom: 10px;
 }
 
+
+.footer-section:first-child p {
+    justify-content: center;
+}
+.footer-section:last-child p {
+    justify-content: flex-end; 
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* =========================================== */
-/* RESPONSIVE DESIGN */
-/* =========================================== */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -1046,14 +1040,13 @@ footer {
 }
 
 @media (max-width: 768px) {
-    /* Mobile nav for Parchment/Moss palette */
     .nav-links {
         display: none;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #3A4D39; /* Moss mobile bg */
+        background-color: #3A4D39;
         flex-direction: column;
         padding: 20px 0;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -1071,9 +1064,9 @@ footer {
         color: #FDFBF7;
     }
     
-    .nav-links a:last-child {
-        border-bottom: none;
-    }
+   .nav-links .last-link {
+    border-bottom: none;
+}
     
     .mobile-menu {
         display: block;
@@ -1083,10 +1076,32 @@ footer {
     }
 }
 
-.gallery-item, .info-card, .breed-card, .team-member, .stat-card, .faq-item {
-    transition: all 0.3s ease;
+.gallery-item, .info-card, .breed-card, .team-member, .stat-card, .faq-item,
+.btn, .filter-btn {
+    transition: 0.3s;
 }
 
-.btn, .filter-btn {
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+@media (max-width: 768px) {
+    .footer-section:first-child,
+    .footer-section:nth-child(2),
+    .footer-section:last-child {
+        text-align: center;
+        order: 0;
+        padding: 0;
+    }
+
+    .footer-section h3 {
+        text-align: center;
+    }
+
+    .footer-section:first-child p,
+    .footer-section:nth-child(2) p,
+    .footer-section:last-child p {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
 }
