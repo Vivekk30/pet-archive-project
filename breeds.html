@@ -21,9 +21,9 @@
                     <a href="about.html">About Us</a>
                     <a href="feedback.html">Feedback</a>
                 </div>
-                <div class="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
+               <div class="mobile-menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+                       </div>
             </nav>
         </div>
     </header>
@@ -272,10 +272,9 @@
         </div>
     </section>
 
-    <!-- POPUP MODAL WINDOW -->
+
     <div class="popup-modal" id="popupModal">
         <div class="popup-content">
-            <!-- Content will be inserted here by JavaScript -->
         </div>
     </div>
 
@@ -307,150 +306,146 @@
         </div>
     </footer>
 
-    <script>
-    
-        function filterBreeds(type) {
-            const items = document.getElementsByClassName('gallery-item');
-            const buttons = document.getElementsByClassName('filter-btn');
-            
-        
-            for (let btn of buttons) btn.classList.remove('active');
-            if (type === 'all') buttons[0].classList.add('active');
-            if (type === 'dog') buttons[1].classList.add('active');
-            if (type === 'cat') buttons[2].classList.add('active');
-            if (type === 'parrot') buttons[3].classList.add('active');
-            
+   <script>
+    function toggleMenu() {
+        var navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('show');
+    }
 
-            for (let item of items) {
-                if (type === 'all' || item.classList.contains(type)) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
+    function filterBreeds(type) {
+        var items = document.getElementsByClassName('gallery-item');
+        var buttons = document.getElementsByClassName('filter-btn');
+        
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove('active');
+            if (buttons[i].textContent.toLowerCase().includes(type) || (type === 'all' && i === 0)) {
+                buttons[i].classList.add('active');
             }
         }
-        
-        
-        const breedData = {
-            'golden': {
-                type: 'dog',
-                name: 'Golden Retriever',
-                category: 'Dog Breed',
-                size: 'Large',
-                weight: '55-75 lbs',
-                lifespan: '10-12 years',
-                energy: 'High',
-                description: 'Friendly, intelligent, and devoted family companions known for their gentle nature.',
-                allergies: ['Hip dysplasia', 'Skin allergies', 'Ear infections'],
-                habits: ['2 hours daily exercise', 'Loves swimming', 'Weekly brushing'],
-                funFact: 'They have a soft mouth for carrying things gently without damaging them.'
-            },
-            'german': {
-                type: 'dog',
-                name: 'German Shepherd',
-                category: 'Dog Breed',
-                size: 'Large',
-                weight: '50-90 lbs',
-                lifespan: '9-13 years',
-                energy: 'Very High',
-                description: 'Loyal, protective working dogs with high intelligence.',
-                allergies: ['Hip dysplasia', 'Digestive issues', 'Bloat risk'],
-                habits: ['2+ hours exercise', 'Mental stimulation needed', 'Regular training'],
-                funFact: 'They have 225 million scent receptors - 45 times more than humans!'
-            },
-            'siamese': {
-                type: 'cat',
-                name: 'Siamese',
-                category: 'Cat Breed',
-                size: 'Medium',
-                weight: '6-14 lbs',
-                lifespan: '15-20 years',
-                energy: 'High',
-                description: 'Vocal, social felines known for their striking blue eyes.',
-                allergies: ['Dental issues', 'Respiratory problems', 'Crossed eyes'],
-                habits: ['Very vocal', 'Social interaction needed', 'Daily play sessions'],
-                funFact: 'Siamese cats are born completely white and develop their points as they age.'
-            },
-            'african': {
-                type: 'parrot',
-                name: 'African Grey',
-                category: 'Parrot Breed',
-                size: 'Medium',
-                weight: '400-650g',
-                lifespan: '40-60 years',
-                energy: 'High',
-                description: 'Highly intelligent birds known for exceptional talking ability.',
-                allergies: ['Feather plucking', 'Respiratory issues', 'Calcium deficiency'],
-                habits: ['Mental stimulation needed', 'Social interaction required', 'Puzzle toys'],
-                funFact: 'African Greys have the intelligence of a 5-year-old child.'
-            }
-        };
-        
-        
-        function showBreed(id) {
-            const breed = breedData[id] || breedData['golden'];
-            const modal = document.getElementById('popupModal');
-            
-            // Set styling
-            let bg = 'dog-bg', icon = 'fa-dog';
-            if (breed.type === 'cat') { bg = 'cat-bg'; icon = 'fa-cat'; }
-            if (breed.type === 'parrot') { bg = 'parrot-bg'; icon = 'fa-dove'; }
-            
-          
-            document.querySelector('.popup-content').innerHTML = `
-                <button class="close-popup" onclick="closePopup()">&times;</button>
-                <div class="popup-header ${bg}">
-                    <i class="fas ${icon}"></i>
-                    <div class="popup-title">
-                        <h2>${breed.name}</h2>
-                        <p class="popup-subtitle">${breed.category} • Lifespan: ${breed.lifespan}</p>
-                    </div>
-                </div>
-                <div class="popup-body">
-                    <div class="popup-section">
-                        <h3><i class="fas fa-info-circle"></i> Basic Information</h3>
-                        <p><strong>Size:</strong> ${breed.size}</p>
-                        <p><strong>Weight:</strong> ${breed.weight}</p>
-                        <p><strong>Energy:</strong> ${breed.energy}</p>
-                        <p>${breed.description}</p>
-                    </div>
-                    <div class="popup-section">
-                        <h3><i class="fas fa-heartbeat"></i> Health Issues</h3>
-                        <ul class="popup-list">${breed.allergies.map(a => `<li>${a}</li>`).join('')}</ul>
-                    </div>
-                    <div class="popup-section">
-                        <h3><i class="fas fa-running"></i> Daily Care</h3>
-                        <ul class="popup-list">${breed.habits.map(h => `<li>${h}</li>`).join('')}</ul>
-                    </div>
-                    <div class="popup-section">
-                        <h3><i class="fas fa-star"></i> Fun Fact</h3>
-                        <p>${breed.funFact}</p>
-                    </div>
-                </div>
-            `;
-            
-            modal.style.display = 'flex';
-        }
-        
-       
-        function closePopup() {
-            document.getElementById('popupModal').style.display = 'none';
-        }
-        
-     
-        window.onclick = function(e) {
-            if (e.target.id === 'popupModal') closePopup();
-        }
-        
-    
-        document.onkeydown = function(e) {
-            if (e.key === 'Escape') closePopup();
-        }
-        
 
-        document.querySelector('.mobile-menu').onclick = function() {
-            document.querySelector('.nav-links').classList.toggle('show');
+        for (var i = 0; i < items.length; i++) {
+            var item = items[i];
+            if (type === 'all' || item.classList.contains(type)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
         }
-    </script>
+    }
+
+    const breedData = {
+        'golden': {
+            type: 'dog',
+            name: 'Golden Retriever',
+            category: 'Dog Breed',
+            size: 'Large',
+            weight: '55-75 lbs',
+            lifespan: '10-12 years',
+            energy: 'High',
+            description: 'Friendly, intelligent, and devoted family companions known for their gentle nature.',
+            allergies: 'Hip dysplasia, Skin allergies, Ear infections',
+            habits: '2 hours daily exercise, Loves swimming, Weekly brushing',
+            funFact: 'They have a soft mouth for carrying things gently without damaging them.'
+        },
+        'german': {
+            type: 'dog',
+            name: 'German Shepherd',
+            category: 'Dog Breed',
+            size: 'Large',
+            weight: '50-90 lbs',
+            lifespan: '9-13 years',
+            energy: 'Very High',
+            description: 'Loyal, protective working dogs with high intelligence.',
+            allergies: 'Hip dysplasia, Digestive issues, Bloat risk',
+            habits: '2+ hours exercise, Mental stimulation needed, Regular training',
+            funFact: 'They have 225 million scent receptors - 45 times more than humans!'
+        },
+        'siamese': {
+            type: 'cat',
+            name: 'Siamese',
+            category: 'Cat Breed',
+            size: 'Medium',
+            weight: '6-14 lbs',
+            lifespan: '15-20 years',
+            energy: 'High',
+            description: 'Vocal, social felines known for their striking blue eyes.',
+            allergies: 'Dental issues, Respiratory problems, Crossed eyes',
+            habits: 'Very vocal, Social interaction needed, Daily play sessions',
+            funFact: 'Siamese cats are born completely white and develop their points as they age.'
+        },
+        'african': {
+            type: 'parrot',
+            name: 'African Grey',
+            category: 'Parrot Breed',
+            size: 'Medium',
+            weight: '400-650g',
+            lifespan: '40-60 years',
+            energy: 'High',
+            description: 'Highly intelligent birds known for exceptional talking ability.',
+            allergies: 'Feather plucking, Respiratory issues, Calcium deficiency',
+            habits: 'Mental stimulation needed, Social interaction required, Puzzle toys',
+            funFact: 'African Greys have the intelligence of a 5-year-old child.'
+        }
+    };
+
+    function showBreed(id) {
+        var breed = breedData[id];
+        
+        if (!breed) {
+            breed = breedData['golden'];
+        }
+
+        var modal = document.getElementById('popupModal');
+        var content = document.querySelector('.popup-content');
+        
+        var bgClass = 'dog-bg';
+        if (breed.type === 'cat') bgClass = 'cat-bg';
+        if (breed.type === 'parrot') bgClass = 'parrot-bg';
+
+        content.innerHTML = `
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <div class="popup-header ${bgClass}">
+                <div class="popup-title">
+                    <h2>${breed.name}</h2>
+                    <p class="popup-subtitle">${breed.category} • Lifespan: ${breed.lifespan}</p>
+                </div>
+            </div>
+            <div class="popup-body">
+                <div class="popup-section">
+                    <h3>Basic Information</h3>
+                    <p><strong>Size:</strong> ${breed.size}</p>
+                    <p><strong>Weight:</strong> ${breed.weight}</p>
+                    <p><strong>Energy:</strong> ${breed.energy}</p>
+                    <p>${breed.description}</p>
+                </div>
+                <div class="popup-section">
+                    <h3>Health Issues</h3>
+                    <p>${breed.allergies}</p>
+                </div>
+                <div class="popup-section">
+                    <h3>Daily Care</h3>
+                    <p>${breed.habits}</p>
+                </div>
+                <div class="popup-section">
+                    <h3>Fun Fact</h3>
+                    <p>${breed.funFact}</p>
+                </div>
+            </div>
+        `;
+        
+        modal.style.display = 'flex';
+    }
+
+    function closePopup() {
+        document.getElementById('popupModal').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        var modal = document.getElementById('popupModal');
+        if (event.target == modal) {
+            closePopup();
+        }
+    }
+</script>
 </body>
 </html>
